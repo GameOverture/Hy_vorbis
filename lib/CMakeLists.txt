@@ -106,7 +106,7 @@ if (NOT BUILD_FRAMEWORK)
     )
 
     target_link_libraries(vorbis
-        PUBLIC Ogg::ogg
+        PUBLIC ogg#Ogg::ogg
         PRIVATE $<$<BOOL:${HAVE_LIBM}>:m>
     )
     target_link_libraries(vorbisenc PUBLIC vorbis)
